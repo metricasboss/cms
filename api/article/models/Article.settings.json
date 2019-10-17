@@ -36,7 +36,8 @@
     },
     "categories": {
       "collection": "category",
-      "via": "article"
+      "via": "articles",
+      "dominant": true
     },
     "draft": {
       "type": "boolean"

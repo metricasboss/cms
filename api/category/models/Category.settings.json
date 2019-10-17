@@ -17,8 +17,8 @@
     "slug": {
       "type": "string"
     },
-    "article": {
-      "model": "article",
+    "articles": {
+      "collection": "article",
       "via": "categories"
     }
   }
