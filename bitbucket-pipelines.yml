@@ -1,9 +1,13 @@
-script:
-  - pipe: atlassian/aws-code-deploy:0.2.9
-    variables:
-      AWS_DEFAULT_REGION: ''
-      AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-      AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-      COMMAND: 'upload'
-      APPLICATION_NAME: 'cms'
-      ZIP_FILE: 'cms.zip'    
+pipelines:
+  branches:
+    master:
+      - step:
+        script:
+          - pipe: atlassian/aws-code-deploy:0.2.9
+            variables:
+              AWS_DEFAULT_REGION: ''
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              COMMAND: 'upload'
+              APPLICATION_NAME: 'cms'
+              ZIP_FILE: 'cms.zip'    
