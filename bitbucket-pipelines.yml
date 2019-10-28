@@ -5,7 +5,7 @@ pipelines:
           name: "Build"
           script:
             - apt-get update && apt-get install -y zip
-            - zip cms.zip
+            - zip -r cms.zip ./
           artifacts: 
           - cms.zip
       - step:
