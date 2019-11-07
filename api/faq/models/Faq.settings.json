@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "faqs",
+  "info": {
+    "name": "faq",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "ask": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "richtext"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "faq"
+    }
+  }
+}

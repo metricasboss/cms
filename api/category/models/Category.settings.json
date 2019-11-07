@@ -20,6 +20,10 @@
     "articles": {
       "collection": "article",
       "via": "categories"
+    },
+    "faq": {
+      "model": "faq",
+      "via": "categories"
     }
   }
 }
