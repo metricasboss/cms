@@ -12,7 +12,8 @@
         "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
       "options": {
-        "ssl": false
+        "ssl": false,
+        "debug": true
       }
     }
   }
